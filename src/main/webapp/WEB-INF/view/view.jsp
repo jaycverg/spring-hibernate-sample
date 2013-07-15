@@ -4,7 +4,7 @@
 
 <c:set var="ctxPath" value="${pageContext.request.contextPath}"/>
 
-<layout:master title="Request Details">
+<layout:master title="Employee Information">
 
     <form:form id="req-form" class="form"
                modelAttribute="entity"

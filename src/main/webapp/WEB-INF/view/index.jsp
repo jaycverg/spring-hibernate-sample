@@ -4,7 +4,7 @@
 
 <c:set var="ctxPath" value="${pageContext.request.contextPath}"/>
 
-<layout:master title="Request List">
+<layout:master title="Employee List">
 
     <legend>Service Requests</legend>
     <div class="pull-left">
