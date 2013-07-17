@@ -88,4 +88,16 @@ public class EmployeeController
 
         return "redirect:/";
     }
+
+    /**
+     * Handles GET request for "/employee/remove/{id}" URL mapping
+     *
+     * @param id - the ID of the employee to be removed
+     */
+    @RequestMapping(value = "/employee/remove/{id}", method = RequestMethod.GET)
+    public String remove(@PathVariable Long id)
+    {
+        service.delete(id);
+        return "redirect:/";
+    }
 }

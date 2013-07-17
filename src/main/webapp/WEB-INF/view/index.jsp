@@ -52,6 +52,11 @@
                 <td>${item.address}</td>
                 <td class="a-center">
                     <a href="${ctxPath}/employee/${item.id}">View</a>
+                    <span> | </span>
+                    <a href="${ctxPath}/employee/remove/${item.id}"
+                       onclick="return confirm('Are you sure you want to delete this entry?');">
+                        Delete
+                    </a>
                 </td>
             </tr>
         </c:forEach>

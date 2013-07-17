@@ -14,7 +14,7 @@ public interface EmployeeIService
 
     Employee update(Employee employee);
 
-    void delete(Employee employee);
+    void delete(Long id);
 
     Employee find(Long id);
 

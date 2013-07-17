@@ -31,8 +31,9 @@ public class EmployeeService implements EmployeeIService
     }
 
     @Override
-    public void delete(Employee employee)
+    public void delete(Long id)
     {
+        Employee employee = repository.findOne(id);
         repository.delete(employee);
     }
 
